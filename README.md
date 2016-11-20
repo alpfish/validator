@@ -10,7 +10,7 @@ required, mobile, email, tel, url, min, max, min_length, max_length, integer
 ```Javascript
 import Validator from './validator'
 
-let v = (new Validator).validate({
+let v = Validator.validate({
     value: 'XXXXXX'
     rules: 'required|min_length(6)|max_length(20)',
     errors: '请输入密码。|密码长度最少6位。|密码长度不能超过20位。',
